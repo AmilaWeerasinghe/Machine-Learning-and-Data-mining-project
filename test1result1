@@ -1,0 +1,109 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     data
+Instances:    552
+Attributes:   16
+              A1
+              A2
+              A3
+              A4
+              A5
+              A6
+              A7
+              A8
+              A9
+              A10
+              A11
+              A12
+              A13
+              A14
+              A15
+              A16
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+A11 = TRUE
+|   A8 = TRUE: Success (200.0/21.0)
+|   A8 = FALSE
+|   |   A9 = v
+|   |   |   A14 <= 112
+|   |   |   |   A3 = u: Success (15.57/0.57)
+|   |   |   |   A3 = y
+|   |   |   |   |   A15 = g: Failure (4.0)
+|   |   |   |   |   A15 = s: Success (3.0/1.0)
+|   |   |   |   |   A15 = p: Failure (0.0)
+|   |   |   |   A3 = l: Success (0.0)
+|   |   |   A14 > 112
+|   |   |   |   A7 <= 70
+|   |   |   |   |   A2 <= 46.67: Failure (29.81/5.0)
+|   |   |   |   |   A2 > 46.67: Success (3.19/0.19)
+|   |   |   |   A7 > 70: Success (9.0)
+|   |   A9 = h: Success (29.26/7.26)
+|   |   A9 = bb
+|   |   |   A14 <= 160: Success (5.51/1.51)
+|   |   |   A14 > 160: Failure (8.61)
+|   |   A9 = ff: Failure (4.04)
+|   |   A9 = j: Failure (1.01)
+|   |   A9 = z: Success (0.0)
+|   |   A9 = o: Success (0.0)
+|   |   A9 = dd: Success (1.01/0.01)
+|   |   A9 = n: Success (0.0)
+A11 = FALSE: Failure (238.0/15.0)
+
+Number of Leaves  : 	19
+
+Size of the tree : 	28
+
+Attribute mappings:
+
+Model attributes	    Incoming attributes
+----------------	    ----------------
+(nominal) A1    	--> 1 (nominal) A1
+(numeric) A2    	--> 2 (numeric) A2
+(nominal) A3    	--> 3 (nominal) A3
+(nominal) A4    	--> 4 (nominal) A4
+(numeric) A5    	--> 5 (numeric) A5
+(nominal) A6    	--> 6 (nominal) A6
+(numeric) A7    	--> 7 (numeric) A7
+(nominal) A8    	--> 8 (nominal) A8
+(nominal) A9    	--> 9 (nominal) A9
+(numeric) A10   	--> 10 (numeric) A10
+(nominal) A11   	--> 11 (nominal) A11
+(numeric) A12   	--> 12 (numeric) A12
+(nominal) A13   	--> 13 (nominal) A13
+(numeric) A14   	--> 14 (numeric) A14
+(nominal) A15   	--> 15 (nominal) A15
+(nominal) A16   	--> 16 missing (type mis-match)
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                 15     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        ?        ?          ?        ?          ?        ?         ?         Success
+                 ?        ?        ?          ?        ?          ?        ?         ?         Failure
+Weighted Avg.    ?        ?        ?          ?        ?          ?        ?         ?         
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 0 0 | a = Success
+ 0 0 | b = Failure
+
